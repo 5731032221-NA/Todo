@@ -9,13 +9,10 @@ const List = props => (
     
   <ol>
     {
-      props.list.map((item, index) => <li key={index}  onClick={() => { props.delete(index);}}>{item}  
-                                        </li>)
+      props.list.map((item, index) => <li onClick={() => { props.delete(index);}}key={index}>{item}  </li>)
     }
   </ol>
 );
-
-export default List;
 
 class NameForm extends React.Component {
   constructor(props) {
